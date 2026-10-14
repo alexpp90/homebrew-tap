@@ -8,7 +8,7 @@ cask "photo-selector-toolbox" do
   homepage "https://github.com/alexpp90/photo-selector"
 
   conflicts_with cask: "photo-selector-toolbox@nightly"
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "PhotoSelector.app"
 
