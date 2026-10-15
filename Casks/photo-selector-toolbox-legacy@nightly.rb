@@ -1,6 +1,6 @@
 cask "photo-selector-toolbox-legacy@nightly" do
   version :latest
-  sha256 "ea9eb70fe1f662c54197fcb8260c53af6ed558ae5b63f92128454bac724620dc" # macos_sha256
+  sha256 "c0a7df2e040fc2d9bff940747b8353ce1213446142d27c0d77ee7a93750ecd2f" # macos_sha256
 
   url "https://github.com/alexpp90/photo-selector/releases/download/nightly/photo-selector-toolbox-macos-apple-silicon.zip"
   name "Photo Selector Toolbox (Legacy Nightly)"
