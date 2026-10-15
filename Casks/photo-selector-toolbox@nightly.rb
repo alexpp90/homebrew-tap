@@ -1,6 +1,6 @@
 cask "photo-selector-toolbox@nightly" do
   version :latest
-  sha256 "a1b33c0a756141fead8630bd23c8f0eefe687c6057ce83216ffc705e4d00790b" # macos_sha256
+  sha256 "bcf24c286ef3e7fe0d684c8d1f76df5fc2ab44cef07b5787580749c446244328" # macos_sha256
 
   url "https://github.com/alexpp90/photo-selector/releases/download/nightly/photo-selector-macos-apple-silicon.zip"
   name "PhotoSelector Studio (Nightly)"
