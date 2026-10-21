@@ -1,6 +1,6 @@
 cask "photo-selector-toolbox@nightly" do
   version :latest
-  sha256 "0f0b3c72e8638ad56d9f881654ea78528f2b98d971bdf03bb954d666e20b439c" # macos_sha256
+  sha256 "2d7b5cbcbbf21f86a443e453968134e693ca27bc8d7d33fe205abaae2d9c2f1a" # macos_sha256
 
   url "https://github.com/alexpp90/photo-selector/releases/download/nightly/photo-selector-macos-apple-silicon.zip"
   name "PhotoSelector Studio (Nightly)"
@@ -10,7 +10,7 @@ cask "photo-selector-toolbox@nightly" do
   conflicts_with cask: "photo-selector-toolbox"
   depends_on macos: :sonoma
 
-  app "PhotoSelector.app"
+  app "Lensjet.app"
 
   zap trash: "~/Library/Preferences/com.photoselectortoolbox.macos.plist"
 end
