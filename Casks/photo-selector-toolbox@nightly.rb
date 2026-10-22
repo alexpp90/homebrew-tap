@@ -1,8 +1,8 @@
 cask "photo-selector-toolbox@nightly" do
   version :latest
-  sha256 "e7eb8e029753d00f3fe5028eb84cf27f1576e7bd98d7d406019c245bc13bb825" # macos_sha256
+  sha256 "b546a0c49021daeddfa576889a1b7d4f09f580058ceb15bae8aeef395ad3b1a0" # macos_sha256
 
-  url "https://github.com/alexpp90/photo-selector/releases/download/nightly/photo-selector-macos-apple-silicon.zip"
+  url "https://github.com/alexpp90/photo-selector/releases/download/nightly-macos-desktop/photo-selector-macos-apple-silicon.zip"
   name "Lensjet (Nightly)"
   desc "Mac photo culling: compare, score and sort photos on-device (nightly build)"
   homepage "https://github.com/alexpp90/photo-selector"
