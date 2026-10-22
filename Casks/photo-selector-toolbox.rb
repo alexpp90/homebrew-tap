@@ -1,16 +1,19 @@
 cask "photo-selector-toolbox" do
-  version "0.5.0"
-  sha256 "7e596e12db088f93133fd438cb6093eec457cf44e454b4113ea05156b6075f4e" # macos_sha256
+  version "0.2.0"
+  sha256 "d6143d1aaa3af7de901f8407e6f1b4035dc70bf3663181385fcb46456aa97557" # macos_sha256
 
-  url "https://github.com/alexpp90/photo-selector/releases/download/v#{version}/photo-selector-macos-apple-silicon.zip"
-  name "PhotoSelector Studio"
-  desc "High-performance native macOS photo culling and selection application (Swift 6 & Apple Vision)"
+  url "https://github.com/alexpp90/photo-selector/releases/download/macos-desktop-v#{version}/photo-selector-macos-apple-silicon.zip"
+  name "Lensjet"
+  desc "Mac photo culling: compare, score and sort photos on-device"
   homepage "https://github.com/alexpp90/photo-selector"
 
   conflicts_with cask: "photo-selector-toolbox@nightly"
   depends_on macos: :sonoma
 
-  app "PhotoSelector.app"
+  app "Lensjet.app"
 
-  zap trash: "~/Library/Preferences/com.photoselectortoolbox.macos.plist"
+  zap trash: [
+    "~/Library/Preferences/com.photoselectortoolbox.macos.plist",
+    "~/Library/Preferences/app.alpatix.lensjet.plist",
+  ]
 end
