@@ -6,14 +6,14 @@ class PhotoSelectorToolboxATNightly < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/alexpp90/photo-selector/releases/download/nightly/photo-selector-toolbox-macos-apple-silicon.zip"
-      sha256 "86246e699092c619ba024250d7035d0952c0db6868a6475328543fcdd42679e3" # macos_sha256
+      sha256 "85062e0b80cb65bdf63df9326779e7367b9f95032190344bf32505fa2d4fff3f" # macos_sha256
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/alexpp90/photo-selector/releases/download/nightly/photo-selector-toolbox-linux-x64.zip"
-      sha256 "68145efd5bddb96d0f7e09301ce4c1169d335b8352daff0f717101535339e5f3" # linux_sha256
+      sha256 "c4511975342d520fbdb8866d25f45f3a5367645b788d06f1ffefe7ab6f2bb705" # linux_sha256
     end
   end
 
