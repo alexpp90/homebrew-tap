@@ -1,6 +1,6 @@
 cask "photo-selector-toolbox@nightly" do
   version :latest
-  sha256 "a172823a4bf2a5399bb459410aba5d866054f97d1aee0cd690d42f5623aa487f" # macos_sha256
+  sha256 "5a74358cbb8346fc471a6be739d6f0bc11366cdba3289376f786ee5445410b47" # macos_sha256
 
   url "https://github.com/alexpp90/photo-selector/releases/download/nightly-macos-desktop/photo-selector-macos-apple-silicon.zip"
   name "Lensjet (Nightly)"
