@@ -1,6 +1,6 @@
 cask "photo-selector-toolbox@nightly" do
   version :latest
-  sha256 "b546a0c49021daeddfa576889a1b7d4f09f580058ceb15bae8aeef395ad3b1a0" # macos_sha256
+  sha256 "a172823a4bf2a5399bb459410aba5d866054f97d1aee0cd690d42f5623aa487f" # macos_sha256
 
   url "https://github.com/alexpp90/photo-selector/releases/download/nightly-macos-desktop/photo-selector-macos-apple-silicon.zip"
   name "Lensjet (Nightly)"
@@ -11,6 +11,14 @@ cask "photo-selector-toolbox@nightly" do
   depends_on macos: :sonoma
 
   app "Lensjet.app"
+
+  caveats <<~EOS
+    Lensjet is not notarized by Apple yet, so macOS blocks the first launch
+    ("Apple could not verify ...").
+    Open System Settings > Privacy & Security, scroll to Security, click "Open Anyway"
+    next to Lensjet and confirm. This is needed once.
+    Or, in Terminal: xattr -dr com.apple.quarantine /Applications/Lensjet.app
+  EOS
 
   zap trash: [
     "~/Library/Preferences/com.photoselectortoolbox.macos.plist",
