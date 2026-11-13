@@ -12,6 +12,11 @@ cask "photo-selector-toolbox" do
 
   app "Lensjet.app"
 
+  caveats <<~EOS
+    Lensjet has its own cask now and this one no longer updates. Once:
+    brew uninstall --cask photo-selector-toolbox && brew install --cask lensjet
+  EOS
+
   zap trash: [
     "~/Library/Preferences/com.photoselectortoolbox.macos.plist",
     "~/Library/Preferences/app.alpatix.lensjet.plist",
