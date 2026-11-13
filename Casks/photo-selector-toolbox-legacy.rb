@@ -1,8 +1,8 @@
 cask "photo-selector-toolbox-legacy" do
   version "0.5.0"
-  sha256 "1d983c6b26d3ecdf487141db59692533be0614ccfca25a9c88304adff56cae39" # macos_sha256
+  sha256 "129d35d0ca093388e47eddfb31c6cd221e0695f57800ab5af5fa4bbc0f286fbc" # macos_sha256
 
-  url "https://github.com/alexpp90/photo-selector/releases/download/v#{version}/photo-selector-toolbox-macos-apple-silicon.zip"
+  url "https://github.com/alexpp90/photo-selector/releases/download/desktop-v#{version}/photo-selector-toolbox-macos-apple-silicon.zip"
   name "Photo Selector Toolbox (Legacy)"
   desc "Legacy Python/Tkinter photo selection and EXIF metadata suite"
   homepage "https://github.com/alexpp90/photo-selector"
