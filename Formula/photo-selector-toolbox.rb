@@ -29,6 +29,6 @@ class PhotoSelectorToolbox < Formula
   end
 
   test do
-    system "#{bin}/photo-selector-toolbox", "--help"
+    system bin/"photo-selector-toolbox", "--help"
   end
 end
